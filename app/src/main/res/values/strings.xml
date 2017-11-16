@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Saving Grow</string>
+    <string name="income">Income</string>
+    <string name="expense">Expense</string>
+    <string name="saving">Saving</string>
+
 </resources>
