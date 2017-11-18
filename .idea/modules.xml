@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SavingGrow.iml" filepath="$PROJECT_DIR$/SavingGrow.iml" />
+      <module fileurl="file://D:\Project\SavingGrow\.idea\SavingGrow.iml" filepath="D:\Project\SavingGrow\.idea\SavingGrow.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
