@@ -16,9 +16,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SavingActivity" />
-        <activity android:name=".ExpenseActivity" />
-        <activity android:name=".IncomeActivity"></activity>
+        <activity
+            android:name=".ReportActivity"
+            android:label="@string/report" />
+        <activity
+            android:name=".MainFragmentActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".LoginActivity">
+
+        </activity>
     </application>
 
 </manifest>

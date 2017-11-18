@@ -4,4 +4,12 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="white">#ffffff</color>
+    <color name="Black">#000000</color>
+    <color name="GrayHint">#808080</color>
+    <color name="blueincome">#1C8EEE</color>
+    <color name="redexpense">#ef4e1b</color>
+    <color name="greensaving">#C1D85C</color>
+    <color name="bggray">#eaece9</color>
+    <color name="bgtext">#fafcf9</color>
+    <color name="greensave">#27ad73</color>
 </resources>

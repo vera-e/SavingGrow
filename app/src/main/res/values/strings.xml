@@ -3,5 +3,19 @@
     <string name="income">Income</string>
     <string name="expense">Expense</string>
     <string name="saving">Saving</string>
+    <string name="report">Report</string>
+    <string name="title_activity_income">IncomeActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="button_tofragment">PUSH</string>
+    <string name="date">Date</string>
+    <string name="category">Category</string>
+    <string name="amount">Amount</string>
+    <string name="contents">Titles</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
 
 </resources>

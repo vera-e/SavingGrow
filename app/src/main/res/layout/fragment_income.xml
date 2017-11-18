@@ -1,0 +1,214 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bggray"
+
+    tools:context="devdeep.savinggrow.MainFragmentActivity">
+
+    <LinearLayout
+        android:id="@+id/main_contents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+            <!--date-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="@dimen/tvnum_width_margin"
+                    android:layout_height="@dimen/tvnum_height_margin"
+                    android:background="@color/bgtext"
+                    android:layout_marginEnd="@dimen/spacetable"
+                    android:text="@string/date"
+                    android:textSize="@dimen/tvnum_size"
+                    android:textColor="@color/GrayHint"
+                    android:gravity="center"
+                    />
+
+                <EditText
+                    android:id="@+id/ed_date"
+                    android:inputType="none"
+                    android:focusable="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tvnum_height_margin"
+                    android:background="@color/bgtext"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/ednum_size"
+                    tools:ignore="LabelFor"
+                    android:paddingLeft="@dimen/edpadding_left"/>
+            </LinearLayout>
+
+            <!--contents-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/spacetable">
+
+
+                <TextView
+                    android:layout_width="@dimen/tvnum_width_margin"
+                    android:layout_height="@dimen/tvnum_height_margin"
+                    android:text="@string/contents"
+                    android:background="@color/bgtext"
+                    android:layout_marginRight="@dimen/spacetable"
+                    android:textSize="@dimen/tvnum_size"
+                    android:textColor="@color/GrayHint"
+                    android:gravity="center"
+                    />
+
+                <EditText
+                    android:id="@+id/ed_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textShortMessage"
+                    android:background="@color/bgtext"
+                    android:paddingLeft="@dimen/edpadding_left"
+                    android:cursorVisible="false"/>
+            </LinearLayout>
+
+            <!--category-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="2dp">
+
+
+                <TextView
+                    android:id="@+id/tv_category"
+                    android:layout_width="@dimen/tvnum_width_margin"
+                    android:layout_height="@dimen/tvnum_height_margin"
+                    android:text="@string/category"
+                    android:background="@color/bgtext"
+                    android:layout_marginEnd="@dimen/spacetable"
+                    android:textSize="@dimen/tvnum_size"
+                    android:textColor="@color/GrayHint"
+                    android:gravity="center"
+                    />
+
+                <EditText
+                    android:id="@+id/ed_category"
+                    android:layout_weight="3"
+                    android:inputType="none"
+                    android:focusable="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tvnum_height_margin"
+                    android:background="@color/bgtext"
+                    android:textSize="@dimen/ednum_size"
+                    android:textColor="@color/Black"
+                    tools:ignore="LabelFor"
+                    android:paddingLeft="@dimen/edpadding_left"/>
+
+                <Button
+                    android:id="@+id/btchooseCategory"
+                    android:layout_width="54dp"
+                    android:layout_height="@dimen/tvnum_height_margin"
+                    android:background="@mipmap/ic_choice"
+                    />
+            </LinearLayout>
+
+        <!--amount-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/spacetable">
+
+
+            <TextView
+                android:layout_width="@dimen/tvnum_width_margin"
+                android:layout_height="@dimen/tvnum_height_margin"
+                android:text="@string/amount"
+                android:background="@color/bgtext"
+                android:layout_marginRight="@dimen/spacetable"
+                android:textSize="@dimen/tvnum_size"
+                android:textColor="@color/GrayHint"
+                android:gravity="center"
+
+                />
+
+            <EditText
+                android:id="@+id/ed_amount"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                android:background="@color/bgtext"
+                android:textSize="@dimen/ednum_size"
+                android:paddingLeft="@dimen/edpadding_left"
+                android:cursorVisible="false" />
+
+        </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    <!--Memo-->
+    <LinearLayout
+        android:id="@+id/memo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/main_contents"
+        android:layout_margin="10dp"
+        android:background="@color/bgtext">
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp">
+            <EditText
+                android:id="@+id/ed_memo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Memo"
+                android:textColorHint="@color/GrayHint"
+                android:textSize="@dimen/ednum_size"
+                android:gravity="bottom"
+                android:paddingLeft="@dimen/edpadding_left"
+                android:textColor="@color/Black"
+                android:inputType="textLongMessage"
+                android:cursorVisible="false" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <!--Button bar-->
+    <LinearLayout
+        android:layout_below="@id/memo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+        <Button
+            android:id="@+id/btSave"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:text="save"
+            android:textSize="@dimen/text_button"
+            android:textColor="@color/white"
+            android:background="@color/greensave"
+            />
+        <Button
+            android:id="@+id/btContinue"
+            android:layout_marginLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="continue"
+            android:textSize="@dimen/text_button"
+            android:textColor="@color/white"
+            android:background="@color/GrayHint"
+            />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
